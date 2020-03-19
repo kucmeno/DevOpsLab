@@ -15,7 +15,7 @@ client.set('counter', 0);
 
 app.get("/", (req, resp) => {
     console.log("New req");
-    process.exit(0);
+    // process.exit(0);
 
     client.get('counter', (err, counter) => {
         resp.send('counter ' + counter);
