@@ -13,16 +13,39 @@ const client = redis.createClient({
 
 client.set('counter', 0);
 
-app.get("/", (req, resp) => {
-    console.log("New req");
-    // process.exit(0);
+app.get("/:value", (req, resp) => {
 
-    client.get('counter', (err, counter) => {
-        resp.send('counter ' + counter);
-        client.set('counter', parseInt(counter)+1)
+    const n = parseInt(req.param('value'));
+
+    if (n > 15){
+        process.exit(0);
+    }
+    else if (n < 1) {
+        resp.send('zla wartośc');
+    }
+
+    client.get(n, (err, res) => {
+        if (!res){
+            const resultFact = Fact(n);
+            client.set(n, resultFact);
+            resp.send('Wynik nie istnial: ' + n + '! = ' + resultFact + ' ');
+        }
+        else {
+            resp.send('Wynik istnial: ' + n + '! = ' + res + ' ')
+        };
     });
+
+    console.log("New req");
 });
 
+const Fact = (value) => {
+    let result = 1
+    for (i = 1; i <= value; i++) {
+        result = result * i;
+      }
+      return result;
+}
+
 app.listen(8080, () => {
-    console.log("Helowwww i am server 4000");
+    console.log("Hellow i'am server");
 });
