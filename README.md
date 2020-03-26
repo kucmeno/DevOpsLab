@@ -4,7 +4,9 @@
 ### Repozytorium zawiera projekty tworzone na laboratoria z technologi DevOps
  ___
  ---
-## Projekt 1. Budowa obrazu (redis + backend w node.js) [Factorial](https://github.com/kucmeno/DevOpsLab/tree/master/factorial)
+## Projekt 1. Budowa obrazu redis + backend w node.js
+### [Factorial](https://github.com/kucmeno/DevOpsLab/tree/master/factorial)
+### [GCD](https://github.com/kucmeno/DevOpsLab/tree/master/gcd)
  ___
  ---
 ### DockerHub [||||](https://hub.docker.com/u/kucmeno)
