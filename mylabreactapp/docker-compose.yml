@@ -1,0 +1,13 @@
+version: '3'
+
+services: 
+    web:
+        build: 
+            context: .
+            dockerfile: Dockerfile.dev
+        ports:
+            - "4000:3000"
+        volumes: 
+            - /opt/app/node_modules
+            - .:/opt/app
+        tty: true
