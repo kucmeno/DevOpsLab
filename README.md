@@ -7,6 +7,9 @@
 ## Projekt 1. Budowa obrazu redis + backend w node.js
 ### [Factorial](https://github.com/kucmeno/DevOpsLab/tree/master/factorial)
 ### [GCD](https://github.com/kucmeno/DevOpsLab/tree/master/gcd)
+## Lab 7
+### [gcdPGredis](https://github.com/kucmeno/DevOpsLab/tree/master/gcdPGredisApp)
+ 
  ___
  ---
 ### DockerHub [||||](https://hub.docker.com/u/kucmeno)
