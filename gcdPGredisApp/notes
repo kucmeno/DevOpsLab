@@ -1,0 +1,17 @@
+sudo docker run -d \
+    --name some-postgres \
+    -e POSTGRES_PASSWORD=mysecretpassword \
+    -e PGDATA=/var/lib/postgresql/data/pgdata \
+    -v /custom/mount:/var/lib/postgresql/data \
+    postgres
+
+sudo docker run --rm --name my-postgres -e POSTGRES_PASSWORD=123QWERTY -e PGDATA=/var/lib/postgresql/data/pgdata -v /custom/mount:/var/lib/postgresql/data --network my-demo-network postgres
+
+sudo docker run  --env REDIS_HOST=my-redis --rm --name my-backend --network my-demo-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+
+
+sudo docker run -p 8080:8080 --env REDIS_HOST=my-redis REDIS_PORT=6379 --rm --name my-backend --network my-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+sudo docker run --rm --name my-postgres -e POSTGRES_PASSWORD=123QWERTY -e PGDATA=/var/lib/postgresql/data/pgdata -v /custom/mount:/var/lib/postgresql/data --network my-network postgres
+sudo docker run --rm --name my-redis --network my-network redis
+
+sudo docker run -p 8080:8080 --env REDIS_HOST=my-redis --env REDIS_PORT=6379 --rm --name my-backend --network my-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
