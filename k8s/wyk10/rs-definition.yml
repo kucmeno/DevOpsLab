@@ -18,7 +18,7 @@ spec:
         spec:
             containers:
                 - name: my-backend-container
-                  image: kucmeno/mylabnodeapp:latest
+                  image: kucmeno/appforkub:latest
     replicas: 3
     selector:
         matchLabels:

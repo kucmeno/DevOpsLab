@@ -18,9 +18,9 @@ spec:
         spec:
             containers:
                 - name: my-backend-container
-                  image: kucmeno/mybackend
+                  image: kucmeno/appforkub:latest
     replicas: 3
     
     selector:
         matchLabels:
-          type: frontend
+          type: backend
