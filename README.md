@@ -9,6 +9,9 @@
 ### [GCD](https://github.com/kucmeno/DevOpsLab/tree/master/gcd)
 ## Lab 7
 ### [gcdPGredis](https://github.com/kucmeno/DevOpsLab/tree/master/gcdPGredisApp)
+## Lab 8
+### [PESELapp](https://github.com/kucmeno/DevOpsLab/tree/master/FullBackFrontDockerPESELApp)
+#### PG + React + node + nginx
  
  ___
  ---
