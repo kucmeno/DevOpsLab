@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+    name: myapp-replicaset
+    labels:
+      app: myapp
+      type: backend
+
+spec:
+    template:
+        metadata:
+            name: myapp-pod
+            labels:
+              app: myapp
+              type: backend
+        spec:
+            containers:
+                - name: my-backend-container
+                  image: kucmeno/mybackend
+    replicas: 3
+    
+    selector:
+        matchLabels:
+          type: frontend
