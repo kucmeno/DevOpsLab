@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: postgres-deployment
+  labels:
+    app: mypostgres
+    type: db
+
+spec:
+  template:
+    metadata:
+      name: postgres-pod
+      labels:
+        app: mypostgres
+        type: db
+
+    spec:
+      containers:
+        - name: my-postgres-container
+          image: postgres
+          env:
+           - name: POSTGRES_PASSWORD
+             valueFrom:
+               secretKeyRef:
+                 name: myapp-secret
+                 key: PGPASSWORD
+  
+  replicas: 1
+  selector:
+    matchLabels:
+      type: db
