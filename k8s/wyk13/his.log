@@ -1,0 +1,1000 @@
+    9  sudo /sbin/lspci -v | grep BCM
+   10  zypper se -si kernel broadcom
+   11  ode:
+   12  rpm -qa|grep broadcom
+   13  rpm -qa | grep broadcom
+   14  uname -r
+   15  zypper ar -f -n packman http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/packman.repo
+   16  sudo zypper ar -f -n packman http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/packman.repo
+   17  zypper in broadcom-wl broadcom-wl-kmp-desktop
+   18  sudo zypper in broadcom-wl broadcom-wl-kmp-desktop
+   19  >zypper in broadcom-wl broadcom-wl-kmp-default
+   20  sudo zypper in broadcom-wl broadcom-wl-kmp-default
+   21  sudo zypper in broadcom-wl broadcom-wl-kmp-pae
+   22  zypper lr -d
+   23  zypper rr2
+   24  zypper rr 2
+   25  sudo zypper rr 2
+   26  uname -r
+   27  cat /etc/os-release 
+   28  rpm -qa | grep broadcom
+   29  sudo /sbin/lspci -v | grep BCM
+   30  zypper se brcm80211
+   31  zypper se b43
+   32  sudo zypper install b3-fwcutter
+   33  sudo zypper install b43-fwcutter
+   34  zypper ar -cfp 90 http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman
+   35  sudo zypper ar -cfp 90 http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman
+   36  sudo zypper in broadcom-wl
+   37  uname -a
+   38  uname 0r
+   39  uname -r
+   40  cat /etc/os-release 
+   41  ll
+   42  sudo zypper in flash-player-ppapi-32.0.0.344-release.x86_64.rpm
+   43  ll
+   44  cd ..
+   45  ll
+   46  cd blazej/
+   47  ll
+   48  ll studies/
+   49  cd studies/
+   50  ll dockerTMP/
+   51  ll wyk6
+   52  cd dockerTMP/
+   53  ll wyk6
+   54  sudo zypper dup --from snappy
+   55  spotify
+   56  sudo snap install spotify
+   57  snap help refresh
+   58  snap refrsh
+   59  snap refresh
+   60  spotify
+   61  sudo snap install spotify
+   62  Spotify
+   63  snap run
+   64  snap run Spotify
+   65  snap run spotify
+   66  tmux
+   67  zypper se postgresql
+   68  tmux
+   69  sudo docker stop applab7 
+   70  sudo docker ps -a
+   71  sudo docker stop 5dcb945b2f6e
+   72  sudo docker ps -a
+   73  sudo docker stop db0fd808fe60
+   74  curl localhost:9090
+   75  curl localhost:8080
+   76  curl localhost:80
+   77  curl localhost:4040
+   78  curl localhost:9090
+   79  curl localhost:8080
+   80  sudo docker ps a
+   81  sudo docker ps -a
+   82  curl localhost:8080/
+   83  curl localhost:8080/4
+   84  sudo docker stop 5dcb945b2f6e
+   85  sudo docker stop my-backend
+   86  curl localhost:4000/4
+   87  curl localhost:4000
+   88  curl localhost:3000
+   89  sudo docker stop my-backend
+   90  vim /etc/pulse/default.pa
+   91  clear
+   92  sudo vim /etc/pulse/default.pa
+   93  cd studies/
+   94  cd dockerTMP/
+   95  ll
+   96  mkdir lab7
+   97  ll
+   98  cd lab7
+   99  ll
+  100  docker network ls
+  101  sudp docker network ls
+  102  sudo docker network ls
+  103  sudo docker build -t appLab7 . 
+  104  sudo docker build -t applab7 . 
+  105  sudo docker run  --env REDIS_HOST=my-redis --rm --name my-backend --network my-demo-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT5432 applab7
+  106  sudo docker run  --env REDIS_HOST=my-redis --rm --name my-backend --network my-demo-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+  107  sudo docker run -p 8080:8080 --env REDIS_HOST=my-redis --rm --name my-backend --network my-demo-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+  108  sudo docker run -p 4000:3000 --env REDIS_HOST=my-redis --rm --name my-backend --network my-demo-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+  109  sudo docker run -p 8080:8080 --enDIS_HOST=my-redis --rm --name my-backend --network my-demo-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+  110  sudo docker run -p 8080:8080 --env REDIS_HOST=my-redis --rm --name my-backend --network my-demo-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+  111  sudo docker run -p 8080:8080 --env REDIS_HOST=my-redis --env REDIS_PORT=6379 --rm --name my-backend --network my-demo-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+  112  sudo docker run -p 80:80 --env REDIS_HOST=my-redis --env REDIS_PORT=6379 --rm --name my-backend --network my-demo-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+  113  sudo docker run -p 8080:8080 -p 8443:8443 --env REDIS_HOST=my-redis --env REDIS_PORT=6379 --rm --name my-backend --network my-demo-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+  114  sudo docker build -t applab7 . 
+  115  sudo docker run -p 8080:8080 -p 8443:8443 --env REDIS_HOST=my-redis --env REDIS_PORT=6379 --rm --name my-backend --network my-demo-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+  116  sudo docker run -p 4000:8080 --env REDIS_HOST=my-redis --env REDIS_PORT=6379 --rm --name my-backend --network my-demo-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+  117  sudo docker network create my-network
+  118  sudo docker build -t applab7 . 
+  119  sudo docker run -p 8080:8080 --env REDIS_HOST=my-redis --env REDIS_PORT=6379 --rm --name my-backend --network my-demo-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+  120  sudo docker run -p 8080:8080 --env REDIS_HOST=my-redis --env REDIS_PORT=6379 --rm --name my-backend --network my-network -v /opt/app/node_modules -v $(pwd):/opt/app -e PGHOST=my-postgres -e PGUSER=postgres -e PGDATABASE=postgres -e PGPASSWORD=123QWERTY -e PGPORT=5432 applab7
+  121  cd ll
+  122  ll
+  123  cd ..
+  124  mkdir wyk8
+  125  cd wyk8
+  126  code .
+  127  mkdir nginx
+  128  cd nginx
+  129  cd ..
+  130  sudo docker-compose up
+  131  sudo docker-compose up --build
+  132  cd ..
+  133  cp -r wyk8 DevOpsStuff/
+  134  cd DevOpsStuff/
+  135  ll
+  136  mv wyk8 wyk8(16.04.2020)
+  137  mv wyk8 "wyk8(16.04.2020)"
+  138  ll
+  139  git gui
+  140  git push
+  141  sudo docker stop my-backend
+  142  curl localhost:8080
+  143  sudo docker stop my-backend
+  144  curl localhost:8080
+  145  sudo docker stop my-backend
+  146  curl localhost:8080
+  147  curl localhost:8080/
+  148  curl localhost:8080/ll
+  149  sudo docker stop my-backend
+  150  curl localhost:8080/ll
+  151  curl localhost:80
+  152  curl "localhost:80"
+  153  sudo docker stop my-backend
+  154  curl "localhost:8080"
+  155  sudo docker stop my-backend
+  156  curl "localhost:8080"
+  157  curl "localhost:8443"
+  158  curl "localhost:80"
+  159  curl 127.0.0.1:8080
+  160  curl 0.0.0.0:8080
+  161  sudo docker stop my-backend
+  162  curl 0.0.0.0:8080
+  163  curl 0.0.0.0:4000
+  164  curl localhost:4000
+  165  sudo docker stop my-backend
+  166  sudo docker prune -a
+  167  sudo docker prune all
+  168  sudo docker purge all
+  169  sudo docker rm $(docker ps -a -q)
+  170  docker stop $(docker ps -a -q)
+  171  docker system prune -a
+  172  sudo docker system prune -a
+  173  curl localhost:8080
+  174  sudo curl localhost:8080
+  175  sudo docker stop my-backend
+  176  sudo curl localhost:8080
+  177  zypper se ltunify
+  178  snap \
+  179  cd Downloads/
+  180  ll
+  181  sudo zypper in 
+  182  ltunify
+  183  ltunify list
+  184  sudo ltunify list
+  185  sudo ltunify info 1
+  186  zypper se solar
+  187  ls
+  188  sudo zypper in Solaar-0.9.2-lp151.7.2.src.rpm
+  189  ls
+  190  sudo zypper in Solaar-0.9.2-lp151.7.2.noarch.rpm
+  191  Solaar
+  192  solar
+  193  solar-cli
+  194  solaar-cli
+  195  solaar
+  196  sudo solaar
+  197  solaar --help
+  198  lsusb |grep Logitech
+  199  solar -v
+  200  solar -V
+  201  solaar -V
+  202  vim /usr/lib/python2.7/site-packages/solaar/gtk.py
+  203  sudo vim /usr/lib/python2.7/site-packages/solaar/gtk.py
+  204  solaar -V
+  205  sudo vim /usr/lib/python2.7/site-packages/solaar/gtk.py
+  206  solaar -V
+  207  q
+  208  sudo vim /usr/lib/
+  209  sudo vim /usr/lib/python2.7/site-packages/solaar/gtk.py
+  210  sudo zypper rm solaar
+  211  sudo zypper rm Solaar
+  212  zypper ps -s
+  213  solaar -V
+  214  git clone https://github.com/pwr-Solaar/Solaar.git
+  215  cd Solaar
+  216  sudo bin/solaar
+  217  zypper se python3-pyudev
+  218  zypper se gtk3
+  219  sudo zypper in gtk3
+  220  zypper se python3-goobject
+  221  zypper se python3-gobject
+  222  sudo zypper install python3-gobject
+  223  sudo bin/solaar
+  224  zypper se udev
+  225  udev
+  226  udevadm
+  227  udevadm start
+  228  rpm -ql systemd | grep udev
+  229  systemclt udev status
+  230  service udev status
+  231  sudo service udev status
+  232  sudo service udevadm status
+  233  sudo service udevd status
+  234  sudo service systemd status
+  235  rules.d/install.sh
+  236  solaar
+  237  bin bin/solaar
+  238  bin/solaar
+  239  sudo docker stop my-backend
+  240  curl localhost:3000
+  241  curl localhost:4000
+  242  curl localhost:8080
+  243  cd ..
+  244  cd studies/dockerTMP/wyk8
+  245  sudo docker-compose down
+  246  curl localhost:8080
+  247  curl localhost:3000
+  248  curl localhost:
+  249  curl localhost:4000
+  250  curl localhost:3000
+  251  curl localhost:8080
+  252  curl localhost:8080/api
+  253  curl localhost:8080/api/
+  254  sudo docker-compose down
+  255  npx create-react-app frontend
+  256  cd frontend/
+  257  yarn add axios
+  258  cd studies/dockerTMP/lab7/
+  259  npm init -y
+  260  yarn add express
+  261  yarn add redis
+  262  yarn add nodemon
+  263  yaarn add pg
+  264  yarn add pg
+  265  yarn add body-pat
+  266  yarn add body-par
+  267  yarn add body-parser
+  268  sudo docker run -rm --name my-postgres -e POSTGRES_PASSWORD=123QWERTY --network my-demo-network postgres
+  269  sudo docker run --rm --name my-postgres -e POSTGRES_PASSWORD=123QWERTY --network my-demo-network postgres
+  270  sudo docker build postgres
+  271  sudo docker run --rm --name my-postgres -e POSTGRES_PASSWORD=123QWERTY --network my-demo-network -d postgres
+  272  sudo docker run --rm --name my-postgres -e POSTGRES_PASSWORD=123QWERTY --network my-demo-network postgres
+  273  sudo docker p a
+  274  sudo docker ps a
+  275  sudo docker ps -a
+  276  sudo docker rm 1168cfd9b5c8
+  277  sudo docker stop 1168cfd9b5c8
+  278  sudo docker rm 1168cfd9b5c8
+  279  sudo docker ps -a
+  280  sudo docker run --rm --name my-postgres -e POSTGRES_PASSWORD=123QWERTY --network my-demo-network postgres
+  281  sudo docker run --rm --name my-postgres -e POSTGRES_PASSWORD=123QWERTY -e PGDATA=/var/lib/postgresql/data/pgdata -v /custom/mount:/var/lib/postgresql/data --network my-demo-network postgres
+  282  sudo docker run --rm --name my-postgres -e POSTGRES_PASSWORD=123QWERTY -e PGDATA=/var/lib/postgresql/data/pgdata -v /custom/mount:/var/lib/postgresql/data --network my-network postgres
+  283  cd studies/
+  284  cd dockerTMP/
+  285  cd lab7
+  286  code .
+  287  sudo docker netwrok ls
+  288  sudo docker network ls
+  289  sudo docker network rm my-demo-network
+  290  sudo docker network ls
+  291  sudo docker network create my-demo-network
+  292  sudo docker network inspect my-demo-network
+  293  clear
+  294  docker run -rm --name my-redis --network my-demo-app redis
+  295  docker run --rm --name my-redis --network my-demo-app redis
+  296  sudo docker run --rm --name my-redis --network my-demo-app redis
+  297  sudo docker run --rm --name my-redis --network my-demo-network redis
+  298  sudo docker run --rm --name my-redis --network my-network redis
+  299  cd Downloads/
+  300  ll
+  301  cd ioquake3/
+  302  ll\
+  303  ll
+  304  ./ioquake3
+  305  ./ioquake3 +set cl_renderer opengl1 +set r_mode -1 +set r_customwidth 1280 +set r_customheight 720 +set r_fullscreen 1 +set cg_drawFPS 1
+  306  ./ioquake3 /r_fullscreen 1 
+  307  ./ioquake3 r_fullscreen 1 
+  308  ./ioquake3 r_fullscreen 1 /r_customheight 800
+  309  /r_customwidth 1280 /r_customheight 800
+  310  ./ioquake3 r_customwidth 1920 r_customheight 1080
+  311  ./ioquake3 /r_customwidth 1920 /r_customheight 1080
+  312  ./ioquake3 seta r_mode"-1"-1 basically translates to “custom settings“
+  313  seta r_customwidth"5120"Preferred screen width *
+  314  ll
+  315  cd baseq3/
+  316  ll
+  317  cd ..
+  318  ll
+  319  ./ioquake3
+  320  ll ~/.q3a/baseq3/q3config.cfg
+  321  vim  ~/.q3a/baseq3/q3config.cfg
+  322  vim  ~/.q3a/baseq3/q3config.cfg 
+  323  ./ioquake3
+  324  vim  ~/.q3a/baseq3/q3config.cfg 
+  325  ./ioquake3
+  326  vim  ~/.q3a/baseq3/q3config.cfg 
+  327  ./ioquake3
+  328  cd Downloads/
+  329  ll
+  330  sudo zypper install steam-1.0.0.59-lp151.2.1.x86_64.rpm
+  331  ll
+  332  NVIDIA-Linux-x86_64-440.82.run
+  333  ./NVIDIA-Linux-x86_64-440.82.run
+  334  sudo ./NVIDIA-Linux-x86_64-440.82.run
+  335  sudo NVIDIA-Linux-x86_64-440.82.run
+  336  NVIDIA-Linux-x86_64-440.82.run
+  337  zypper addrepo --refresh https://download.nvidia.com/opensuse/leap/15.1 NVIDIA
+  338  sudo zypper addrepo --refresh https://download.nvidia.com/opensuse/leap/15.1 NVIDIA
+  339  cat /etc/os-release
+  340  lspci | grep VGA
+  341  lspci
+  342  sudo lspci
+  343  sudo lspci | grep VGA
+  344  sudo lspci | grep Arch
+  345  hwinfo
+  346  sudo hwinfo
+  347  sudo hwinfo --gfxcard | grep Model
+  348  sudo hwinfo --arch
+  349  zypper se x11-video-nvdiaG0*
+  350  zypper refresh
+  351  sudpo zypper refresh
+  352  sudo zypper refresh
+  353  sudpo zypper refresh
+  354  zypper se x11-video-nvdiaG0*
+  355  zypper se x11-video-nvidiaG0*
+  356  zypper se -s x11-video-nvidiaG0*
+  357  sudo zypper in x11-video-nvidiaG05
+  358  zypper se -ir NVIDIA
+  359  df -H
+  360  htop
+  361  sudo zypper  inhtop
+  362  sudo zypper in htop
+  363  htop
+  364  nvdia
+  365  nvdia-settings
+  366  sudo nvdia-settings
+  367  nvidia-settings
+  368  sudo nvidia-settings
+  369  nvidia-settings --help
+  370  nvidia-settings
+  371  ERROR: Unable to load info from any available syst
+  372  nvidia-xconfig
+  373  sudo nvidia-xconfig
+  374  ERROR: Unable to load info from any available system
+  375  sudo prime-select nvidia
+  376  nvidia-xconfig
+  377  nvidia-settings
+  378  sudo nvidia-settings
+  379  prime-select nvidia
+  380  sudo prime-select nvidia
+  381  sudo prime-select intel
+  382  sudo nvidia-settings
+  383  sudo nvidia-settings nvidia
+  384  sudo nvidia-settings --help
+  385  sudo zypper in opensuse-prime
+  386  prime-select nvidia
+  387  sudo prime-select nvidia
+  388  sudo nvidia-xconfig
+  389  rm -v /etc/X11/xorg.conf
+  390  sudo rm -v /etc/X11/xorg.conf
+  391  sudo nvidia-xconfig
+  392  sudo nvidia-settings
+  393  pacman -Qs nvidia
+  394  zypper se pacman
+  395  cat /etc/hostname 
+  396  gksu nvidia-settings
+  397  zypper se gksu
+  398  cd Downloads/
+  399  ll
+  400  sudo zypper ingksu-2.0.2-lp151.2.1.x86_64.rpm
+  401  sudo zypper in gksu-2.0.2-lp151.2.1.x86_64.rpm
+  402  sudo zypper in gksu-2.0.2-lp151.2.1.src.rpm
+  403  nvidia-settings
+  404  OB
+  405  tmux
+  406  cd ..
+  407  cd studies/dockerTMP/
+  408  cd wyk8
+  409  ll
+  410  code .
+  411  curl localhost:8080/api/
+  412  exec -it backend_1 sh
+  413  exec -it backend_1 bash
+  414  docker exec -it backend_1 bash
+  415  sudo docker exec -it backend_1 bash
+  416  sudo docker exec -it backend bash
+  417  docker ps -a
+  418  sudp docker ps -a
+  419  sudo docker ps
+  420  sudo docker exec -it lab8_backend bash
+  421  sudo docker exec -it lab8_backend_1 bash
+  422  sudo docker exec -it lab8_backend_1 sh
+  423  cd ..
+  424  cd lab7
+  425  code .
+  426  curl localhost:8080/api/pg
+  427  sudo docker ps
+  428  sudo docker stop lab8_my-redis-server_1
+  429  sudo docker start lab8_my-redis-server_1
+  430  sudo docker stop lab8_my-redis-server_1
+  431  sudo docker start lab8_my-redis-server_1
+  432  cd ..
+  433  cd lab8
+  434  sudo docker-compose down
+  435  curl localhost:8080/api/pg
+  436  cat /etc/os-release 
+  437  sudo docker-compose down
+  438  curl localhost:8080/api/pg
+  439  sudo docker-compose down
+  440  curl localhost:8080/api/pg
+  441  sudo docker-compose down
+  442  curl localhost:8080/api/pg
+  443  sudo docker-compose down
+  444  curl localhost:8080/api/pg
+  445  zypper se kubernets
+  446  zypper se kubernetes
+  447  zypper se kubectl
+  448  sudo snap install kubectl --classic
+  449  kubectl --version
+  450  kubectl --help
+  451  kubectl -v
+  452  kubectl --v
+  453  kubectl --help
+  454  kubectl --version
+  455  kubectl version
+  456  kubectl get pods
+  457  sudo kubectl get pods
+  458  kubectl get pods
+  459  sudo snap install notepad-plus-plus
+  460  zypper addrepo --type yum --gpgcheck-strict --refresh 
+  461  sudo zypper addrepo --type yum --gpgcheck-strict --refresh 
+  462  zypper addrepo --type yum --gpgcheck-strict --refresh https://packages.cloud.google.com/yum/repos/kubernetes-el7-s390x google-k8s
+  463  sudo zypper addrepo --type yum --gpgcheck-strict --refresh https://packages.cloud.google.com/yum/repos/kubernetes-el7-s390x google-k8s
+  464  rpm --import https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+  465  sudo rpm --import https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+  466  sudo rpm --import https://packages.cloud.google.com/yum/doc/yum-key.gpg
+  467  rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
+  468  gpg-pubkey-39db7c82-5847eb1f --> gpg(SuSE Package Signing Key <build@suse.de>)
+  469  gpg-pubkey-50a3dd1c-50f35137 --> gpg(SuSE Package Signing Key (reserve key) <build@suse.de>)
+  470  gpg-pubkey-3e1ba8d5-558ab6a8 --> gpg(Google Cloud Packages RPM Signing Key <gc-team@google.com>)         <<< the new signing keys
+  471  gpg-pubkey-ba07f4fb-5ac168db --> gpg(Google Cloud Packages Automatic Signing Key <gc-team@google.com>)   <<<
+  472  rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
+  473  gpg-pubkey-39db7c82-5847eb1f --> gpg(SuSE Package Signing Key <build@suse.de>)
+  474  gpg-pubkey-50a3dd1c-50f35137 --> gpg(SuSE Package Signing Key (reserve key) <build@suse.de>)
+  475  gpg-pubkey-3e1ba8d5-558ab6a8 --> gpg(Google Cloud Packages RPM Signing Key <gc-team@google.com>)         <<< the new signing keys
+  476  rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
+  477  gpg-pubkey-39db7c82-5847eb1f --> gpg(SuSE Package Signing Key <build@suse.de>)
+  478  gpg-pubkey-50a3dd1c-50f35137 --> gpg(SuSE Package Signing Key (reserve key) <build@suse.de>)
+  479  gpg-pubkey-3e1ba8d5-558ab6a8 --> gpg(Google Cloud Packages RPM Signing Key <gc-team@google.com>)         <<< the new signing keys
+  480  rpm -q gpg-pubkey --qf '%{name}-%{version}-%{release} --> %{summary}\n'
+  481  zypper packages --repo google-k8s
+  482  sudo zypper packages --repo google-k8s
+  483  zypper --refresh
+  484  zypper repo --refresh
+  485  zypper refresh google-k8s
+  486  sudo zypper refresh google-k8s
+  487  zypper refresh google-k8s
+  488  sudo zypper packages --repo google-k8s
+  489  sudo zypper refresh google-k8s
+  490  zypper install kubelet-1.12.5-0.s390x kubernetes-cni-0.6.0-0.s390x kubeadm-1.12.5-0.s390x cri-tools-1.12.0-0 kubectl-1.12.5-0.s390x
+  491  sudo zypper install kubelet-1.12.5-0.s390x kubernetes-cni-0.6.0-0.s390x kubeadm-1.12.5-0.s390x cri-tools-1.12.0-0 kubectl-1.12.5-0.s390x
+  492  zypper packages --repo google-
+  493  zypper packages --repo google-k8s
+  494  sysctl -p
+  495  sudo sysctl -p
+  496  zypper addrepo --type yum --gpgcheck-strict --refresh https://packages.cloud.google.com/yum/repos/kubernetes-el7-s390x google-k8s
+  497  sudo zypper addrepo --type yum --gpgcheck-strict --refresh https://packages.cloud.google.com/yum/repos/kubernetes-el7-s390x google-k8s
+  498  sudo rpm --import https://packages.cloud.google.com/yum/doc/yum-key.gpg
+  499  sudo rpm --import https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+  500  zypper refresh google-k8s
+  501  sudo zypper refresh google-k8s
+  502  zypper packages --repo google-k8s
+  503  sudo zypper install kubelet-1.12.5-0.s390x
+  504  cat /etc/os-release 
+  505  sudo snap install kubeadm --classic
+  506  kubectl version
+  507  cat ~/.kube/config
+  508  kubectl version
+  509  curl localhost:8080/api/pg
+  510  ll
+  511  cd frontend/
+  512  npm intall --save react-boostrap
+  513  yarn add npm react-boostrap
+  514  yarn add react-boostrap
+  515  npm install react-bootstrap
+  516  yarn add bootstrap@4.0.0-alpha.6
+  517  sudo docker-compose down
+  518  sudo docker exec -it lab8_backend_1 sh
+  519  sudo docker exec -it lab8_frontend_1 sh
+  520  curl localhost:8080/api/pg
+  521  curl localhost:8080/api/pesel
+  522  curl localhost:8080/api/pg
+  523  sudo docker-compose down
+  524  curl localhost:8080/api/pg
+  525  sudo docker-compose down
+  526  curl localhost:8080/api/pg
+  527  sudo docker-compose down
+  528  curl localhost:8080/api/pg
+  529  sudo docker-compose down
+  530  cd ..
+  531  cd studies/
+  532  cd dockerTMP/wyk8
+  533  git gui
+  534  cd ..
+  535  cd DevOpsStuff/
+  536  git gui
+  537  cd wyk8\(16.04.2020\)/
+  538  ll
+  539  ll -a
+  540  git gui
+  541  cd ..
+  542  git gui
+  543  git push
+  544  git push --force
+  545  git diff
+  546  git satus
+  547  git status
+  548  git gui
+  549  cd wyk
+  550  cd wyk8\(16.04.2020\)/
+  551  ll
+  552  ls -a
+  553  cd frontend/
+  554  ls -a
+  555  rm -rf .git
+  556  git gui
+  557  git push
+  558  cd ..
+  559  mkdir lab8
+  560  cd lab8
+  561  code .
+  562  mkdir nginx
+  563  cd nginx
+  564  mkdir backend
+  565  rm backend/
+  566  rmdir backend/
+  567  cd ..
+  568  mkdir backend
+  569  cd backend/
+  570  cd ..
+  571  npx create-react-app frontend
+  572  cd frontend/
+  573  yarn add axios
+  574  ls -a
+  575  ls
+  576  cd ..
+  577  sudo docker-compose up --build
+  578  ls -a
+  579  sudo docker-compose up
+  580  sudo docker-compose up --build
+  581  sudo docker-compose up
+  582  sudo docker-compose up --build
+  583  sudo docker-compose up
+  584  sudo docker-compose up --build
+  585  sudo docker-compose up
+  586  c d..
+  587  cd ..
+  588  cd studies/dockerTMP/
+  589  cd lab8
+  590  ll
+  591  cd frontend/
+  592  npm install bootstrap
+  593  sudo docker-compose down
+  594  cd studies/
+  595  cd dockerTMP/
+  596  cd DevOpsLab/
+  597  git gui
+  598  ll -a
+  599  vim .gitignore 
+  600  git gui
+  601  git branch
+  602  git push
+  603  git remote -v
+  604  git set-url origin git@github.com:kucmeno/DevOpsLab.git
+  605  git remote set-url origin git@github.com:kucmeno/DevOpsLab.git
+  606  git remote -v
+  607  git push
+  608  cd ~/Downloads/
+  609  ll
+  610  sudo zypper in messengerfordesktop-2.0.9-linux-x86_64.rpm
+  611  tmux
+  612  hcitool scan
+  613  hciconfig -a
+  614  tmux
+  615  kubectl
+  616  kubectl cluster-info
+  617  sudo snap uninstall kubeadm 
+  618  sudo snap remove kubeadm 
+  619  sudo snap remove kubectl
+  620  kubectl
+  621  kubectl version
+  622  sudo zypper repo list
+  623  sudo zypper repos list
+  624  sudo zypper repos
+  625  grep -E --color 'vmx|svm' /proc/cpuinfo
+  626  tmux
+  627  zyppe se pulseaudio-bluetooth
+  628  zypper se pulseaudio-bluetooth
+  629  zypper se  pulseaudio-bluetooth 
+  630  zypper se bluez-utils
+  631  bluetoothctl
+  632  tmux
+  633  cd studies/
+  634  cd dockerTMP/
+  635  cd wyk10/
+  636  code .
+  637  cd ..
+  638  cd dockerTMP/
+  639  cd DevOps
+  640  cd DevOpsLab/
+  641  mkdir k8s
+  642  cd ..
+  643  cd .. wky10
+  644  cd wyk10
+  645  minikube status
+  646  sudo chmod 666 /var/run/docker.sock
+  647  minikube status
+  648  minikube start
+  649  minikube status
+  650  kubectl cluster-info
+  651  kubectl create ns ns-definition.yml 
+  652  kubectl create -f ns ns-definition.yml 
+  653  kubectl create -f ns-definition.yml 
+  654  kubectl replace -f rs-definition.yml --namespace=my-dev
+  655  kubectl create -f rs-definition.yml --namespace=my-dev
+  656  kubectl get pod
+  657  curl localhost:8080/
+  658  curl localhost:4000/
+  659  curl localhost:3000/
+  660  kubectl get pod
+  661  kubectl get pods
+  662  kubectl scale --replicas=6 -f rs-definition.yml
+  663  kubectl scale --replicas=6 -f rs-definition.yml --namespace=my-dev
+  664  kubectl get pods
+  665  kubectl get rs
+  666  kubectl get rs --namespace=my-dev
+  667  kubectl get pod
+  668  kubectl get pod --namespace=my-dev
+  669  loc
+  670  cd ..
+  671  cd dockerTMP/
+  672  cd DevOpsL
+  673  cd DevOpsLab/
+  674  cd k8s/
+  675  cp -r ../wyk10/ .
+  676  cp -r ../../wyk10/ .
+  677  ll
+  678  ll 
+  679  wyk10/
+  680  ll wyk10/
+  681  cp ../../lab9/pod-definition.yml  .
+  682  ll
+  683  git gui
+  684  git push
+  685  git pull
+  686  git push
+  687  cd studies/dockerTMP/
+  688  ll
+  689  mkdir wyk10
+  690  cd wyk10
+  691  tumx
+  692  tmux
+  693  cd studies/dockerTMP/wyk10/
+  694  minikube status
+  695  minikube start
+  696  sudo chmod 666 /var/run/docker.sock
+  697  minikube start
+  698  kubectl get pod
+  699  kubectl delete rs myapp-replicaset
+  700  kubectl delete pod myapp-pod
+  701  kubectl delete pod myapp-pod-gcd
+  702  kubectl get pod --namespace=my-dev
+  703  kubectl delete rs myapp-replicaset --namespace=my-dev
+  704  kubectl get pod --namespace=my-dev
+  705  kubectl create -f rs-definition.yml --namespace=my-dev
+  706  kubectl create -f pod-definition.yml --namespace=my-dev
+  707  curl localhost:80/
+  708  curl localhost:80/a
+  709  curl localhost:80
+  710  curl localhost:30009
+  711  curl localhost:30009/
+  712  curl localhost:80
+  713  kubectl create -f pod-definition.yml --namespace=my-dev
+  714  kubectl delete myapp-service --namespace=my-dev
+  715  kubectl create -f pod-definition.yml --namespace=my-dev
+  716  kubectl delete service myapp-service --namespace=my-dev
+  717  kubectl create -f pod-definition.yml --namespace=my-dev
+  718  localhost:80
+  719  curl localhost:80
+  720  curl localhost:4000
+  721  curl localhost:3000
+  722  curl 10.244.0.0:3000
+  723  curl 10.244.0.0:3000/
+  724  curl 10.244.0.0:4000/
+  725  curl 10.244.0.0:80/
+  726  minikube status
+  727  kubectl ps
+  728  kubectl cluster-info
+  729  kubectl get pods
+  730  kubectl get pods --namespace=my-dev
+  731  kubectl get pod --namespace=my-dev
+  732  docker ps
+  733  sudo docker exec -it ecc96ac72344  sh
+  734  kubectl delete service myapp-service --namespace=my-dev
+  735  kubectl delete rs myapp-replicaset --namespace=my-dev
+  736  kubectl create -f pod-definition.yml --namespace=my-dev
+  737  cd studies/dockerTMP/
+  738  cd wyk10
+  739  kubectl create -f pod-definition.yml --namespace=my-dev
+  740  kubectl create pod-definition.yml --namespace=my-dev
+  741  kubectl create -f pod-definition.yml --namespace=my-dev
+  742  kubectl delete service myapp-service --namespace=my-dev
+  743  kubectl create -f pod-definition.yml --namespace=my-dev
+  744  kubectl  get pod
+  745  kubectl  get pod --namespace=my-dev
+  746  kubectl  get pods --namespace=my-dev
+  747  kubectl create -f rs-definition.yml --namespace=my-dev
+  748  kubectl  get pods --namespace=my-dev
+  749  curl localhost:80/
+  750  curl localhost:30009/
+  751  kubectl cluster-info
+  752  curl 172.17.0.2:80/
+  753  curl 172.17.0.2:3009/
+  754  curl 172.17.0.2:80/
+  755  ip a
+  756  curl 172.17.0.1:80/
+  757  curl 172.22.0.1:80/
+  758  curl 172.22.0.1:3009/
+  759  curl 172.19.0.1:3009/
+  760  curl 172.19.0.1:80/
+  761  minikube cluster-info
+  762  curl 172.22.0.2:80/
+  763  curl 172.17.0.2:80/
+  764  curl 172.18.0.2:80/
+  765  curl 172.17.0.2:80/
+  766  curl 172.17.0.2:30009/
+  767  kubectl delete rs myapp-replicaset --namespace=my-dev
+  768  curl 172.17.0.2:30009/
+  769  kubectl create -f rs-definition.yml --namespace=my-dev
+  770  kubectl get pod --namespace=my-dev
+  771  curl 172.17.0.2:30009/
+  772  kubectl delete rs myapp-replicaset --namespace=my-dev
+  773  kubectl create -f rs-definition.yml --namespace=my-dev
+  774  curl 172.17.0.2:30009/
+  775  kubectl delete rs myapp-replicaset --namespace=my-dev
+  776  kubectl create -f rs-definition.yml --namespace=my-dev
+  777  kubectl get pod --namespace=my-dev
+  778  curl 172.17.0.2:30009/
+  779  cp -r . ../DevOpsLab/k8s/wyk10/
+  780  ll ../DevOpsLab/k8s/wyk10/
+  781  cd ../DevOpsLab/
+  782  git gui
+  783  git push
+  784  curl localhost:5000/
+  785  curl 172.17.0.2:30010/
+  786  curl 172.17.0.2:30009/
+  787  curl 172.17.0.2:30010/
+  788  cd ..
+  789  cd DevOpsStuff/
+  790  git add .
+  791  git commit -am "update"
+  792  git push
+  793  cd studies/dockerTMP/wyk10/
+  794  cd d..
+  795  cd..
+  796  cd lab3
+  797  cd LAB3/
+  798  cd app2/
+  799  docker build .
+  800  sudo docker build .
+  801  sudo docker build . -t kucmeno/test1
+  802  docker push kucmeno/test1:latest
+  803  sudo docker push kucmeno/test1:latest
+  804  docker ps
+  805  sudo docker exec -it ecc96ac72344 sh
+  806  cd wyk10
+  807  cd app
+  808  sudo docker build . -t kucmeno/appforkub
+  809  sudo docker push kucmeno/appforkub
+  810  sudo docker build . -t kucmeno/test1
+  811  sudo docker push kucmeno/appforkub
+  812  sudo docker build . -t kucmeno/test1
+  813  sudo docker build . -t kucmeno/appforkub
+  814  sudo docker push kucmeno/appforkub
+  815  cd ..
+  816  cp deployment-definition.yml ../wyk11/
+  817  cd ../wyk11
+  818  kubectl create deployment-definition.yml --namespace=my-dev
+  819  kubectl create -f deployment-definition.yml --namespace=my-dev
+  820  cp ../wyk10/pod-definition.yml redis-service-cluserip.yml
+  821  ll
+  822  kubectl create -f redis-service-cluserip.yml 
+  823  kubectl describe service myredis-service
+  824  kubectl create -f redis-service-cluserip.yml --namespace=my-dev
+  825  kubectl describe service myredisservice --namespace-my-dev
+  826  kubectl describe service myredisservice --namespace=my-dev
+  827  kubectl get pods --namespace=my-dev
+  828  kubectl describe pod redis-deployment-c4784ff8b-gvrcb
+  829  kubectl describe pod redis-deployment-c4784ff8b-gvrcb --namespace=my-dev
+  830  kubectl get pods --namespace=my-dev
+  831  ip a
+  832  kubectl create -f dnsutils.yml --namespace=my-dev
+  833  kubectl create -f dnsutils.yml 
+  834  kubectl exec -ti dnsutils -- nslookup myredisservice
+  835  kubectl describe service myredisservice
+  836  kubectl describe service myredisservice --namespace=my-dev
+  837  mkdir my-backend
+  838  cd my-backend/
+  839  yarn init -y
+  840  yarn add redis express body-parser pg
+  841  vim package.json 
+  842  yarn add uuid
+  843  vim package.json 
+  844  yarn add uuid
+  845  yarn start
+  846  sudo docker build . -t kucmeno/nodekub
+  847  sudo docker push kucmeno/nodekub
+  848  cd ..
+  849  kubectl create -f backend-deployment.yml --namespace=my-dev
+  850  kubectl create -f pod-definition.yml --namespace=my-dev
+  851  kubectl create -f service-definition.yml --namespace=my-dev
+  852  kubectl get pods --namespace=my-dev
+  853  kubectl create -f service-definition.yml --namespace=my-dev
+  854  ip a
+  855  curl 172.17.0.2:3009/
+  856  curl 172.17.0.2:30010/
+  857  cd backend
+  858  cd my-backend/
+  859  sudo docker build . -t kucmeno/nodekub
+  860  sudo docker push kucmeno/nodekub
+  861  cd ..
+  862  kubectl delete rs mybackend --namespace=my-dev
+  863  kubectl delete rs backend-deployment --namespace=my-dev
+  864  kubectl get pod --namespace-my-dev
+  865  kubectl get pods --namespace-my-dev
+  866  kubectl get pods --namespace=my-dev
+  867  kubectl delete rs backend-deployment --namespace=my-dev
+  868  kubectl delete rs my-backend-container --namespace=my-dev
+  869  kubectl delete backend-deployment --namespace=my-dev
+  870  kubectl create -f backend-deployment.yml --namespace=my-dev
+  871  kubectl delete backend-deployment --namespace=my-dev
+  872  kubectl delete backend-deployment
+  873  kubectl delete backend-deployment --namespace=my-dev
+  874  kubectl delete deploymnet backend-deployment --namespace=my-dev
+  875  kubectl delete pod backend-deployment --namespace=my-dev
+  876  kubectl delete rs backend-deployment --namespace=my-dev
+  877  cd my-backend
+  878  sudo docker build . -t kucmeno/nodekub
+  879  sudo docker push kucmeno/nodekub
+  880  cd ..
+  881  kubectl apply -f backend-deployment.yml --namespace=my-dev
+  882  kubectl delete backend-deployment.yml --namespace=my-dev
+  883  kubectl delete backend-deployment --namespace=my-dev
+  884  kubectl get pods
+  885  kubectl get pod
+  886  kubectl get pod --namespace=my-dev
+  887  kubectl get pod rs --namespace=my-dev
+  888  kubectl get rs --namespace=my-dev
+  889  kubectl delete backend-deployment-5c74c44cc7 --namespace=my-dev
+  890  kubectl delete rs  backend-deployment-5c74c44cc7 --namespace=my-dev
+  891  kubectl create -f backend-deployment.yml --namespace=my-dev
+  892  kubectl delete app backend-deployment --namespace=my-dev
+  893  kubectl get /?
+  894  kubectl get pod /?
+  895  kubectl get app
+  896  kubectl get apps
+  897  kubectl get rs
+  898  kubectl get rs --namespace=my-dev
+  899  kubectl get deployment --namespace=my-dev
+  900  kubectl delete deployment backend-deployment --namespace=my-dev
+  901  kubectl create -f backend-deployment.yml --namespace=my-dev
+  902  kubectl get deployment --namespace=my-dev
+  903  kubectl get pods --namespace=my-dev
+  904  kubectl delete deployment backend-deployment --namespace=my-dev
+  905  cd my-backend/
+  906  sudo docker build . -t kucmeno/nodekub
+  907  sudo docker push kucmeno/nodekub
+  908  cd ..
+  909  kubectl create -f backend-deployment.yml --namespace=my-dev
+  910  tmux
+  911  cd studies/dockerTMP/
+  912  tmux
+  913  mkdir wyk12
+  914  cd wyk12
+  915  code .
+  916  kubectl create -f myapp_configMap.yml
+  917  kubectl delete myapp-config
+  918  kubectl delete mayapp-config
+  919  kubectl create -f ns-definition.yml 
+  920  kubectl create -f myapp_configMap.yml --namespace=wyk12
+  921  kubectl describe mayapp-config --namespace=wyk12
+  922  kubectl get mapconfig --namespace=wyk12
+  923  kubectl describe config mayapp-config --namespace=wyk12
+  924  kubectl describe configmap mayapp-config --namespace=wyk12
+  925  cd my-backend/
+  926  sudo docker build . -t kucmeno/nodekubwyk12
+  927  sudo docker push kucmeno/nodekubwyk12
+  928  kubectl create -f service-definition.yml --namespace=wyk12
+  929  cd ..
+  930  kubectl create -f service-definition.yml --namespace=wyk12
+  931  kubectl create -f redis-service-clusterid.yml --namespace=wyk12
+  932  kubectl create -f redis-deployment.yml --namespace=wyk12
+  933  kubectl create -f backend-deployment.yml --namespace=wyk12
+  934  kubectl get pods --namespace=wyk11
+  935  kubectl get pods --namespace=wyk12
+  936  kubectl delete deployment backend-deployment --namespace=wyk12
+  937  kubectl get deployment --namespace=wyk12
+  938  kubectl delete deployment backend-deploymnet --namespace=wyk12
+  939  kubectl create -f backend-deployment.yml --namespace=wyk12
+  940  kubectl get pods --namespace=wyk12
+  941  kubectl logs deploymnet
+  942  kubectl logs deploymnet backend-deploymnet --namespace=wyk12
+  943  kubectl logs  backend-deploymnet --namespace=wyk12
+  944  kubectl logs backend-deploymnet-c46bf6847-46c7j  --namespace=wyk12
+  945  kubectl logs backend-deploymnet-c46bf6847-46c7j --namespace=wyk12
+  946  echo "Hello" | base64
+  947  kecho "koko" | base64
+  948  echo "koko" | base64
+  949  kubectl create -f myapp-secret.yml --namespace=wyk12
+  950  kubectl describe secret myapp-secret --namespace=wyk12
+  951  kubectl describe secret mayapp-secret --namespace=wyk12
+  952  kubectl create -f postgres-deploymnet.yml --namespace=wyk12
+  953  kubectl get pods --namespace-wyk12
+  954  kubectl get pod --namespace-wyk12
+  955  kubectl get pods --namespace=wyk12
+  956  sudo chmod 666 /var/run/docker.sock
+  957  minikube start
+  958  kubectl get pods --namespace=my-dev
+  959  kubectl get pods --namespace=lab11
+  960  curl 172.17.0.2:30010/
+  961  cd studies/dockerTMP/
+  962  tmux
+  963  cd studies/dockerTMP/
+  964  tmux
+  965  cd studies/dockerTMP/
+  966  tmux
+  967  dotnet
+  968  zypper se net core
+  969  zypper se apt-transport-https
+  970  zypper se dotnet-runetime-2.1
+  971  zypper se dotnet-runtime
+  972  sudo zypper install libicu
+  973  udo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+  974  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+  975  wget https://packages.microsoft.com/config/opensuse/15/prod.repo
+  976  sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
+  977  sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
+  978  sudo zypper install dotnet-sdk.2.1
+  979  sudo zypper update
+  980  cat /etc/os-release 
+  981  uname -r
+  982  cd Downloads/
+  983  rpm -i broadcom-wl-dkms-6.30.223.271-8.fc31.x86_64.rpm 
+  984  sudo rpm -i broadcom-wl-dkms-6.30.223.271-8.fc31.x86_64.rpm 
+  985  rpm /help
+  986  sudo rpm -e broadcom-wl-dkms-6.30.223.271-8.fc31.x86_64.rpm 
+  987  sudo rpm -e broadcom-wl-dkms
+  988  sudo rpm -i broadcom-wl-dkms-6.30.223.271-8.fc31.x86_64.rpm 
+  989  reboot
+  990  sudo reboot
+  991  q
+  992  sudo zypper refresh
+  993  sudo zypper in dotnet-sdk-2.1
+  994  sudo zypper in dotnet-runetime-2.1
+  995  sudo zypper in dotnet-runtime-2.1
+  996  dotnet
+  997  cd studies/
+  998  cd MazeGenerators/
+  999  tmux
+ 1000  cd wyk13
+ 1001  minikube start
+ 1002  sudo chmod 666 /var/run/docker.sock
+ 1003  minikube start
+ 1004  kubectl get pods --namespace=wyk12
+ 1005  ll
+ 1006  cd ..
+ 1007  cd wyk12
+ 1008  history > his.log

@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: backend-deploymnet
+  labels:
+    app: mybackend
+    type: backend
+
+spec:
+  template:
+    metadata:
+      name: backend-pod
+      labels:
+        app: mybackend
+        type: backend
+    spec:
+      containers:
+        - name: my-backend-containers
+          image: kucmeno/nodekubwyk12
+          env:
+            - name: REDIS_HOST
+              value: myredisservice
+            - name: REDIS_PORT
+              value: '6379'
+            - name: INIT_MESSAGE
+              valueFrom:
+                configMapKeyRef:
+                  name: myapp-config
+                  key: WELCOME_MESSAGE
+            - name: PGPASSWORD
+              valueFrom:
+                secretKeyRef:
+                    name: myapp-secret
+                    key: PGPASSWORD
+          envFrom:
+            - configMapRef:
+                name: postgres-config
+
+  replicas: 3
+
+  selector:
+    matchLabels:
+      type: backend

@@ -1,0 +1,10 @@
+apiVersion: v1
+
+kind: ConfigMap
+
+metadata:
+    name: myapp-config
+
+data:
+    WELCOME_MESSAGE: "Hello configmap"
+    MAX_REQUEST: "5"

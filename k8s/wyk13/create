@@ -1,0 +1,16 @@
+#!/bin/bash
+kubectl create -f ns-definition.yml
+kubectl create -f redis-service-clusterid.yml --namespace=wyk13
+kubectl create -f redis-deployment.yml --namespace=wyk13
+
+kubectl create -f storage-class.yml --namespace=wyk13
+kubectl create -f persistent-volume-claim.yml --namespace=wyk13
+kubectl create -f persistent-volume.yml --namespace=wyk13
+
+kubectl create -f postgres-service-clusterip.yml --namespace=wyk13
+kubectl create -f postgres-mapconfig.yml --namespace=wyk13
+kubectl create -f postgres-deploymnet.yml --namespace=wyk13
+
+kubectl create -f myapp_configMap.yml --namespace=wyk13
+kubectl create -f service-backend-definition.yml --namespace=wyk13
+kubectl create -f backend-deployment.yml --namespace=wyk13
