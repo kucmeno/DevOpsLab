@@ -1,0 +1,18 @@
+FROM node:alpine as build
+
+WORKDIR /app
+WORKDIR /opt/app
+
+ENV PATH /opt/app/node_modules/.bin:$PATH
+
+COPY package.json ./
+
+COPY package-lock.json ./
+
+RUN npm ci
+
+RUN npm install react-scripts -g
+
+COPY . ./
+
+RUN npm run build

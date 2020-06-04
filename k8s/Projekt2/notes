@@ -1,0 +1,9 @@
+kubectl get pods --namespace=wyk12
+kubectl get deployment --namespace=wyk12
+mapconfig, rs, pv, pvc, sc
+
+kubectl create -f ns-definition.yml
+
+kubectl create -f ns-definition.yml
+
+g
